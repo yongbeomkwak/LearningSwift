@@ -10,14 +10,16 @@ import AVFoundation
 
 class ViewController: UIViewController,AVAudioPlayerDelegate {
     
+    // MARK: - Properties
     var player: AVAudioPlayer!
     var timer: Timer!
     
-    
+    // MARK: - IBOutlets
     @IBOutlet var playPauseButton: UIButton!
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var progressSlider: UISlider!
     
+    // MARK: - Methods
     func initializedPlayer(){
         guard let soundAsset: NSDataAsset = NSDataAsset(name: "sound") else{
             print("음원 파일을 에셋을 가져올 수 없습니다.")
