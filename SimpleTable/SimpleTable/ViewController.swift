@@ -10,7 +10,8 @@ import UIKit
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate  {
 
     @IBOutlet weak var tableView: UITableView!
-    let cellIdentifier:String = "cell"
+    let customCellIdentifier:String = "customCell"
+    let cellIdentifier:String = "identifier"
     
     let korean: [String] = ["가","나","다","라","마","바","사","아","자","차","카","타","파","하"]
     let english: [String] = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"]
@@ -18,6 +19,11 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     let dateFormatter: DateFormatter = {
         let formatter: DateFormatter = DateFormatter()
         formatter.dateStyle = .medium
+        return formatter
+    }()
+    
+    let timeFormatter: DateFormatter = {
+        let formatter: DateFormatter = DateFormatter()
         formatter.timeStyle = .medium
         return formatter
     }()
@@ -48,17 +54,23 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //Row마다 어떤셀을 삽입
         
-        let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath)
+        
         //withIdentifier과 Main에 tableViewcell의 identifer의 이름 일치 해야함
         if(indexPath.section < 2){
-        let text:String = indexPath.section == 0 ? korean[indexPath.row] : english[indexPath.row]
-        cell.textLabel?.text = text
+            let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath)
+            //화면에서 벗어난 셀의 재사용 dequeueReusableCell
+            let text:String = indexPath.section == 0 ? korean[indexPath.row] : english[indexPath.row]
+            cell.textLabel?.text = text
+            return cell
         }
         else{
-            cell.textLabel?.text = self.dateFormatter.string(from: dates[indexPath.row])
+            let cell:CustomTableViewCell = tableView.dequeueReusableCell(withIdentifier: self.customCellIdentifier, for: indexPath) as! CustomTableViewCell
+            cell.leftLabel.text = self.dateFormatter.string(from: self.dates[indexPath.row])
+            cell.rightLabel.text = self.timeFormatter.string(from: self.dates[indexPath.row])
+            return cell
         }
         
-        return cell
+       
         
     }
     
