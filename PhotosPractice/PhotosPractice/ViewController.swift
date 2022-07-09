@@ -7,18 +7,9 @@
 
 import UIKit
 import Photos
-class ViewController: UIViewController,UITableViewDataSource {
+class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,PHPhotoLibraryChangeObserver {
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
+    //PHPhotoLibraryChangeObserver 포토 변화 감지 프로토콜
     
     @IBOutlet weak var tableView: UITableView!
     var fetchResult: PHFetchResult<PHAsset>!
@@ -41,6 +32,23 @@ class ViewController: UIViewController,UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool { //편집 가능
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete { //편집이 삭제 상태면
+            let asset: PHAsset = self.fetchResult[indexPath.row] //삭제할 에셋
+            
+            //해당 에셋 삭제
+            PHPhotoLibrary.shared().performChanges({
+                PHAssetChangeRequest.deleteAssets([asset] as NSArray)
+            }, completionHandler: nil)
+        }
+    }
+    
+    
 
     func requestCollection() {
         
@@ -58,12 +66,22 @@ class ViewController: UIViewController,UITableViewDataSource {
         self.fetchResult = PHAsset.fetchAssets(in: cameraRollCollection, options: fetchOptions)
     }
     
+    func photoLibraryDidChange(_ changeInstance: PHChange) { //옵저버
+        guard let changes = changeInstance.changeDetails(for: fetchResult) else{return}
+        
+        fetchResult = changes.fetchResultAfterChanges// 변화 패치 결과
+        
+        OperationQueue.main.addOperation { //메인 쓰레드
+            self.tableView.reloadSections(IndexSet(0...0), with: .automatic)
+        }
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         //허용 여부 확인
         let photoAurhorizationStatus = PHPhotoLibrary.authorizationStatus()
-        
+        PHPhotoLibrary.shared().register(self)// 옵저버 등록
         switch photoAurhorizationStatus {
         case .notDetermined:
             print("아직 응답하지 않음")
@@ -76,7 +94,7 @@ class ViewController: UIViewController,UITableViewDataSource {
                 case .authorized:
                     print("허용")
                     self.requestCollection()
-                    OperationQueue.main.addOperation { //메인 스레드에서 실행 
+                    OperationQueue.main.addOperation { //메인 스레드에서 실행
                         self.tableView.reloadData()
                     }
                     
@@ -98,6 +116,8 @@ class ViewController: UIViewController,UITableViewDataSource {
             print("접근 제한")
         
         default:break
+            
+            
         }
         
         
