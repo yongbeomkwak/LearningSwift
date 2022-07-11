@@ -17,6 +17,7 @@
 		D80F6FEA287B175600231376 /* NetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80F6FE9287B175600231376 /* NetworkingUITests.swift */; };
 		D80F6FEC287B175600231376 /* NetworkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80F6FEB287B175600231376 /* NetworkingUITestsLaunchTests.swift */; };
 		D80F6FFB287B184600231376 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80F6FFA287B184600231376 /* Model.swift */; };
+		D80F6FFD287C06A200231376 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80F6FFC287C06A200231376 /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D80F6FE9287B175600231376 /* NetworkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingUITests.swift; sourceTree = "<group>"; };
 		D80F6FEB287B175600231376 /* NetworkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D80F6FFA287B184600231376 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D80F6FFC287C06A200231376 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		D80F6FBC287B175500231376 = {
 			isa = PBXGroup;
 			children = (
+				D80F6FFC287C06A200231376 /* Request.swift */,
 				D80F6FC7287B175500231376 /* Networking */,
 				D80F6FDE287B175600231376 /* NetworkingTests */,
 				D80F6FE8287B175600231376 /* NetworkingUITests */,
@@ -263,6 +266,7 @@
 			files = (
 				D80F6FCD287B175500231376 /* ViewController.swift in Sources */,
 				D80F6FC9287B175500231376 /* AppDelegate.swift in Sources */,
+				D80F6FFD287C06A200231376 /* Request.swift in Sources */,
 				D80F6FCB287B175500231376 /* SceneDelegate.swift in Sources */,
 				D80F6FFB287B184600231376 /* Model.swift in Sources */,
 			);

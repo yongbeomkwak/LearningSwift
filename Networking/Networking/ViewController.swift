@@ -37,6 +37,8 @@ class ViewController: UIViewController, UITableViewDataSource {
                     if index.row == indexPath.row{ // 요청시작 시 인덱스 == 현재 보이는 인덱스
                         //만약 위에서 데이터를 불러오는데 스크롤 되어 불러올 때 셀과 현재 보이는 셀의 인덱스가 다를 수 있기 때문에 한번 검사
                         cell.imageView?.image = UIImage(data: imageData)
+                        cell.setNeedsLayout()
+                        
                     }
                     
                     
@@ -54,48 +56,35 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        /*
+         addObserver(_:selector:name:object:) : 노티피케이션을 노티피케이션 센터의 메서드를 가리키는 장소에 이름을 추가합니다.
+         */
+        NotificationCenter.default.addObserver(self, selector: #selector(self.didRecieveFriendsNotification(_:)), name: DidReceiveFriendsNotification, object: nil)
+        
         // Do any additional setup after loading the view.
+    }
+    @objc func didRecieveFriendsNotification(_ noti:Notification){
+        
+        
+        guard let friends: [Friend] = noti.userInfo?["friends"] as? [Friend] else {return}
+        
+        self.friends = friends
+        
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+            
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        guard let url:URL = URL(string: "https://randomuser.me/api/?results=20&inc=name,email,picture") else {return}
-        
-        let session: URLSession = URLSession(configuration: .default) //세션 만들고
-        
-        //데이터 테스크를 만듬
-        let dataTask: URLSessionDataTask = session.dataTask(with: url) { (data: Data?, response: URLResponse?, error:Error?) in
-            
-            
-            //요청이 왔을 때 핸들러 함수
-            if let error = error {
-                print("First Error")
-                print(error.localizedDescription)
-                return
-            }
-            
-            guard let data = data else {return}
-            
-            
-            do {
-                let apiResponse: APIResponse = try JSONDecoder().decode(APIResponse.self, from: data)
-                self.friends = apiResponse.results
-                
-                DispatchQueue.main.async { //메인 스레드
-                    self.tableView.reloadData()
-                }
-               
-            } catch(let err){
-                
-                print(err.localizedDescription)
-            }
-        }
-        
-        dataTask.resume()//요청 시도
+        requestFriend()
+       
     }
 
 
