@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EA68DD5A843AE4774A6EEA3 /* Pods_RadioButtonTest_RadioButtonTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A43BBF33CF8C2AE6ADC9310 /* Pods_RadioButtonTest_RadioButtonTestUITests.framework */; };
+		64DD4819C34F66EBBCF7DEC9 /* Pods_RadioButtonTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEF43FD6FAC03EF01413F52 /* Pods_RadioButtonTest.framework */; };
 		D82CF6B82882CD4B005711AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82CF6B72882CD4B005711AD /* AppDelegate.swift */; };
 		D82CF6BA2882CD4B005711AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82CF6B92882CD4B005711AD /* SceneDelegate.swift */; };
 		D82CF6BC2882CD4B005711AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82CF6BB2882CD4B005711AD /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 		D82CF6CF2882CD4C005711AD /* RadioButtonTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82CF6CE2882CD4C005711AD /* RadioButtonTestTests.swift */; };
 		D82CF6D92882CD4C005711AD /* RadioButtonTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82CF6D82882CD4C005711AD /* RadioButtonTestUITests.swift */; };
 		D82CF6DB2882CD4C005711AD /* RadioButtonTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82CF6DA2882CD4C005711AD /* RadioButtonTestUITestsLaunchTests.swift */; };
+		F81FD2918F3B47877C96FC80 /* Pods_RadioButtonTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1932F7A63D9187F7D1B3B5BD /* Pods_RadioButtonTestTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00B0C3A28F65167C25B0D842 /* Pods-RadioButtonTest-RadioButtonTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioButtonTest-RadioButtonTestUITests.release.xcconfig"; path = "Target Support Files/Pods-RadioButtonTest-RadioButtonTestUITests/Pods-RadioButtonTest-RadioButtonTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0A43BBF33CF8C2AE6ADC9310 /* Pods_RadioButtonTest_RadioButtonTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioButtonTest_RadioButtonTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1932F7A63D9187F7D1B3B5BD /* Pods_RadioButtonTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioButtonTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D745B448283C492EEDAAE83 /* Pods-RadioButtonTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioButtonTest.debug.xcconfig"; path = "Target Support Files/Pods-RadioButtonTest/Pods-RadioButtonTest.debug.xcconfig"; sourceTree = "<group>"; };
+		8DEBB1AD5C9BA6D6D5CC04B3 /* Pods-RadioButtonTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioButtonTestTests.debug.xcconfig"; path = "Target Support Files/Pods-RadioButtonTestTests/Pods-RadioButtonTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDEF43FD6FAC03EF01413F52 /* Pods_RadioButtonTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioButtonTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2316C37E7343BF5CE4D663F /* Pods-RadioButtonTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioButtonTestTests.release.xcconfig"; path = "Target Support Files/Pods-RadioButtonTestTests/Pods-RadioButtonTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		D82CF6B42882CD4B005711AD /* RadioButtonTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioButtonTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82CF6B72882CD4B005711AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D82CF6B92882CD4B005711AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		D82CF6D42882CD4C005711AD /* RadioButtonTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioButtonTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82CF6D82882CD4C005711AD /* RadioButtonTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonTestUITests.swift; sourceTree = "<group>"; };
 		D82CF6DA2882CD4C005711AD /* RadioButtonTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D9D08745330BFE139EFAE7AF /* Pods-RadioButtonTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioButtonTest.release.xcconfig"; path = "Target Support Files/Pods-RadioButtonTest/Pods-RadioButtonTest.release.xcconfig"; sourceTree = "<group>"; };
+		F1675311A3DB0F54FB837ADB /* Pods-RadioButtonTest-RadioButtonTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioButtonTest-RadioButtonTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-RadioButtonTest-RadioButtonTestUITests/Pods-RadioButtonTest-RadioButtonTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64DD4819C34F66EBBCF7DEC9 /* Pods_RadioButtonTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81FD2918F3B47877C96FC80 /* Pods_RadioButtonTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA68DD5A843AE4774A6EEA3 /* Pods_RadioButtonTest_RadioButtonTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		512F423EA808CDC9773C6D7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D745B448283C492EEDAAE83 /* Pods-RadioButtonTest.debug.xcconfig */,
+				D9D08745330BFE139EFAE7AF /* Pods-RadioButtonTest.release.xcconfig */,
+				F1675311A3DB0F54FB837ADB /* Pods-RadioButtonTest-RadioButtonTestUITests.debug.xcconfig */,
+				00B0C3A28F65167C25B0D842 /* Pods-RadioButtonTest-RadioButtonTestUITests.release.xcconfig */,
+				8DEBB1AD5C9BA6D6D5CC04B3 /* Pods-RadioButtonTestTests.debug.xcconfig */,
+				D2316C37E7343BF5CE4D663F /* Pods-RadioButtonTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6F0F2F24B247454F875C382D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDEF43FD6FAC03EF01413F52 /* Pods_RadioButtonTest.framework */,
+				0A43BBF33CF8C2AE6ADC9310 /* Pods_RadioButtonTest_RadioButtonTestUITests.framework */,
+				1932F7A63D9187F7D1B3B5BD /* Pods_RadioButtonTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D82CF6AB2882CD4B005711AD = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				D82CF6CD2882CD4C005711AD /* RadioButtonTestTests */,
 				D82CF6D72882CD4C005711AD /* RadioButtonTestUITests */,
 				D82CF6B52882CD4B005711AD /* Products */,
+				512F423EA808CDC9773C6D7A /* Pods */,
+				6F0F2F24B247454F875C382D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D82CF6DE2882CD4C005711AD /* Build configuration list for PBXNativeTarget "RadioButtonTest" */;
 			buildPhases = (
+				4CECE9B5AC7CA63D3FDE1E7C /* [CP] Check Pods Manifest.lock */,
 				D82CF6B02882CD4B005711AD /* Sources */,
 				D82CF6B12882CD4B005711AD /* Frameworks */,
 				D82CF6B22882CD4B005711AD /* Resources */,
+				01B22AAB1BA8CA948BE2CA4B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D82CF6E12882CD4C005711AD /* Build configuration list for PBXNativeTarget "RadioButtonTestTests" */;
 			buildPhases = (
+				955BE9F2D7809B6E214D6CDF /* [CP] Check Pods Manifest.lock */,
 				D82CF6C62882CD4C005711AD /* Sources */,
 				D82CF6C72882CD4C005711AD /* Frameworks */,
 				D82CF6C82882CD4C005711AD /* Resources */,
@@ -169,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D82CF6E42882CD4C005711AD /* Build configuration list for PBXNativeTarget "RadioButtonTestUITests" */;
 			buildPhases = (
+				8E53543AF98B05C4CC8D4456 /* [CP] Check Pods Manifest.lock */,
 				D82CF6D02882CD4C005711AD /* Sources */,
 				D82CF6D12882CD4C005711AD /* Frameworks */,
 				D82CF6D22882CD4C005711AD /* Resources */,
+				555C0EE2CCDC31CEF864FB7C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01B22AAB1BA8CA948BE2CA4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadioButtonTest/Pods-RadioButtonTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadioButtonTest/Pods-RadioButtonTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RadioButtonTest/Pods-RadioButtonTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CECE9B5AC7CA63D3FDE1E7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RadioButtonTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		555C0EE2CCDC31CEF864FB7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadioButtonTest-RadioButtonTestUITests/Pods-RadioButtonTest-RadioButtonTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RadioButtonTest-RadioButtonTestUITests/Pods-RadioButtonTest-RadioButtonTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RadioButtonTest-RadioButtonTestUITests/Pods-RadioButtonTest-RadioButtonTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E53543AF98B05C4CC8D4456 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RadioButtonTest-RadioButtonTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		955BE9F2D7809B6E214D6CDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RadioButtonTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D82CF6B02882CD4B005711AD /* Sources */ = {
@@ -432,6 +581,7 @@
 		};
 		D82CF6DF2882CD4C005711AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D745B448283C492EEDAAE83 /* Pods-RadioButtonTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +609,7 @@
 		};
 		D82CF6E02882CD4C005711AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D08745330BFE139EFAE7AF /* Pods-RadioButtonTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,6 +637,7 @@
 		};
 		D82CF6E22882CD4C005711AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DEBB1AD5C9BA6D6D5CC04B3 /* Pods-RadioButtonTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +657,7 @@
 		};
 		D82CF6E32882CD4C005711AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2316C37E7343BF5CE4D663F /* Pods-RadioButtonTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,6 +677,7 @@
 		};
 		D82CF6E52882CD4C005711AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1675311A3DB0F54FB837ADB /* Pods-RadioButtonTest-RadioButtonTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,6 +695,7 @@
 		};
 		D82CF6E62882CD4C005711AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B0C3A28F65167C25B0D842 /* Pods-RadioButtonTest-RadioButtonTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_RadioButtonTest {
+  umbrella header "Pods-RadioButtonTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

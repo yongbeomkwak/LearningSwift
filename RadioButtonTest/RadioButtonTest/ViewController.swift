@@ -6,10 +6,12 @@
 //
 
 import UIKit
-
+import RxSwift
+import RxCocoa
 class ViewController: UIViewController {
     
     var index:Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -27,6 +29,7 @@ class ViewController: UIViewController {
     
     @IBAction func touchButton(_ sender:UIButton)
     {
+        
         var sender_idx:Int = 0
         for idx in radioButtons.indices
         {
@@ -34,7 +37,6 @@ class ViewController: UIViewController {
             {
                 sender_idx = idx
             }
-            radioButtons[idx].isSelected = false
         }
         if(sender_idx==index)
         {
@@ -42,12 +44,24 @@ class ViewController: UIViewController {
         }
         else
         {
-            sender.isSelected = true
+            
             index = sender_idx
-            print("DIFF")
+            
+            sender.backgroundColor = .red
+            sender.isSelected = true
+            for unselectedIndex in radioButtons.indices
+            {
+                if(unselectedIndex != index)
+                {
+                    radioButtons[unselectedIndex].backgroundColor = .green
+                    radioButtons[unselectedIndex].isSelected = false
+                }
+
+            }
+            
         }
-        
-        sender.isSelected = true
+
+       
         
     }
 }
