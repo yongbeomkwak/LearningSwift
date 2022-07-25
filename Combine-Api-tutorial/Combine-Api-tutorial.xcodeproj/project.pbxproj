@@ -11,11 +11,13 @@
 		D86B5936288E682C001110A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B5935288E682C001110A5 /* ContentView.swift */; };
 		D86B5938288E682D001110A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86B5937288E682D001110A5 /* Assets.xcassets */; };
 		D86B593B288E682D001110A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86B593A288E682D001110A5 /* Preview Assets.xcassets */; };
-		D86B593D288E682D001110A5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B593C288E682D001110A5 /* Persistence.swift */; };
-		D86B5940288E682D001110A5 /* Combine_Api_tutorial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D86B593E288E682D001110A5 /* Combine_Api_tutorial.xcdatamodeld */; };
 		D86B594A288E682E001110A5 /* Combine_Api_tutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B5949288E682E001110A5 /* Combine_Api_tutorialTests.swift */; };
 		D86B5954288E682E001110A5 /* Combine_Api_tutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B5953288E682E001110A5 /* Combine_Api_tutorialUITests.swift */; };
 		D86B5956288E682E001110A5 /* Combine_Api_tutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B5955288E682E001110A5 /* Combine_Api_tutorialUITestsLaunchTests.swift */; };
+		D86B5963288E69F4001110A5 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B5962288E69F4001110A5 /* Todo.swift */; };
+		D86B5965288E6A4E001110A5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B5964288E6A4E001110A5 /* Post.swift */; };
+		D86B5967288E6B1A001110A5 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B5966288E6B1A001110A5 /* ApiService.swift */; };
+		D86B5969288E7100001110A5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B5968288E7100001110A5 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +43,15 @@
 		D86B5935288E682C001110A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D86B5937288E682D001110A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D86B593A288E682D001110A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D86B593C288E682D001110A5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		D86B593F288E682D001110A5 /* Combine_Api_tutorial.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Combine_Api_tutorial.xcdatamodel; sourceTree = "<group>"; };
 		D86B5945288E682E001110A5 /* Combine-Api-tutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Combine-Api-tutorialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86B5949288E682E001110A5 /* Combine_Api_tutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine_Api_tutorialTests.swift; sourceTree = "<group>"; };
 		D86B594F288E682E001110A5 /* Combine-Api-tutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Combine-Api-tutorialUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86B5953288E682E001110A5 /* Combine_Api_tutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine_Api_tutorialUITests.swift; sourceTree = "<group>"; };
 		D86B5955288E682E001110A5 /* Combine_Api_tutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine_Api_tutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D86B5962288E69F4001110A5 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		D86B5964288E6A4E001110A5 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D86B5966288E6B1A001110A5 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		D86B5968288E7100001110A5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +105,11 @@
 				D86B5933288E682C001110A5 /* Combine_Api_tutorialApp.swift */,
 				D86B5935288E682C001110A5 /* ContentView.swift */,
 				D86B5937288E682D001110A5 /* Assets.xcassets */,
-				D86B593C288E682D001110A5 /* Persistence.swift */,
-				D86B593E288E682D001110A5 /* Combine_Api_tutorial.xcdatamodeld */,
+				D86B5966288E6B1A001110A5 /* ApiService.swift */,
+				D86B5964288E6A4E001110A5 /* Post.swift */,
+				D86B5962288E69F4001110A5 /* Todo.swift */,
 				D86B5939288E682D001110A5 /* Preview Content */,
+				D86B5968288E7100001110A5 /* ViewModel.swift */,
 			);
 			path = "Combine-Api-tutorial";
 			sourceTree = "<group>";
@@ -263,10 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D86B593D288E682D001110A5 /* Persistence.swift in Sources */,
+				D86B5963288E69F4001110A5 /* Todo.swift in Sources */,
 				D86B5936288E682C001110A5 /* ContentView.swift in Sources */,
-				D86B5940288E682D001110A5 /* Combine_Api_tutorial.xcdatamodeld in Sources */,
+				D86B5965288E6A4E001110A5 /* Post.swift in Sources */,
+				D86B5967288E6B1A001110A5 /* ApiService.swift in Sources */,
 				D86B5934288E682C001110A5 /* Combine_Api_tutorialApp.swift in Sources */,
+				D86B5969288E7100001110A5 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,19 +593,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		D86B593E288E682D001110A5 /* Combine_Api_tutorial.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				D86B593F288E682D001110A5 /* Combine_Api_tutorial.xcdatamodel */,
-			);
-			currentVersion = D86B593F288E682D001110A5 /* Combine_Api_tutorial.xcdatamodel */;
-			path = Combine_Api_tutorial.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = D86B5928288E682C001110A5 /* Project object */;
 }

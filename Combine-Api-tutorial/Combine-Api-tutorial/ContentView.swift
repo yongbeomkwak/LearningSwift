@@ -9,80 +9,57 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
-
+    
+    @StateObject var viewModel:ViewModel
+    
+    init(){
+        self._viewModel = StateObject.init(wrappedValue: ViewModel())
+        
+        //StateObject는  _(언더바)를 붙혀서 초기화를 해줘야함, bind과 같음
+        
+    }
+    
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
-                }
-                .onDelete(perform: deleteItems)
+        
+        VStack{
+            Button {
+                self.viewModel.fetchTodos()
+            } label: {
+                Text("Todos 호출").foregroundColor(.white)
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
+            .padding()
+            .background(RoundedRectangle(cornerRadius: 10).fill(.gray))
+            
+            
+            Button {
+                self.viewModel.fetchPosts()
+            } label: {
+                Text("Posts 호출").foregroundColor(.white)
             }
-            Text("Select an item")
+            .padding()
+            .background(RoundedRectangle(cornerRadius: 10).fill(.gray))
+            
+            
+            Button {
+                self.viewModel.fetchTodosAndPostsAtTheSameTime()
+            } label: {
+                Text("Todos Posts 동시호출").foregroundColor(.white)
+            }
+            .padding()
+            .background(RoundedRectangle(cornerRadius: 10).fill(.gray))
+            
         }
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
+    
+    
+    
+    
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()
     }
 }
