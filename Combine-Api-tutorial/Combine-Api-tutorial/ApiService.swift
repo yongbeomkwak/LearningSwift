@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import Alamofire
 
 enum API{
     case fetchTodos
@@ -28,10 +29,24 @@ enum ApiService {
     ///  Todos 가져오기
     /// - Returns: AnyPublisher<[Todo], Error>
     static func fetchTodos() -> AnyPublisher<[Todo], Error> {
-        return URLSession.shared.dataTaskPublisher(for: API.fetchTodos.url)
-            .map{$0.data}
-            .decode(type: [Todo].self, decoder: JSONDecoder())
+        
+//        return URLSession.shared.dataTaskPublisher(for: API.fetchTodos.url)
+//            .map{$0.data}
+//            .decode(type: [Todo].self, decoder: JSONDecoder())
+//            .eraseToAnyPublisher()
+        
+        
+        //AF로 Refactor
+        return AF.request(API.fetchTodos.url)
+            .publishDecodable(type: [Todo].self) //디코딩
+            .value() // 값만 가져오기
+            .mapError { (afError:AFError) in
+                //.value를 거치면 AnyPublisher<Value, AFError> 상태이므로 AFError -> Error로 캐스팅
+                return afError as Error
+            }
             .eraseToAnyPublisher()
+        
+
     }
     
     ///  Posts  가져오기
