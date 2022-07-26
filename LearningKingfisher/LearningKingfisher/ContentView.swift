@@ -10,11 +10,11 @@ import Kingfisher
 
 struct ContentView: View {
     
-    let url:String = "https://randomuser.me/api/portraits/men/"
+    let url:String = "https://randomuser.me/api/portraits/woman/30.jpg"
     
     
 //    var  resource: Resource {
-//        ImageResource(downloadURL: self.url, cacheKey: "my_cache_key")
+//        ImageResource(downloadURL: URL(string: self.url)!, cacheKey: "my_cache_key")
 //    }
     
     var body: some View {
@@ -36,12 +36,14 @@ struct ContentView: View {
 //
 //        }
         
-//        List {
-//            ForEach(0..<20) { i in
-//                KFImage(URL(string: self.url + "\(i+1).jpg")!)
-//                    .cancelOnDisappear(true) //셀이 화면 밖에 있을 때는 다운로드 취소
-//            }
-//        }
+        List {
+            ForEach(0..<20) { i in
+                KFImage(URL(string: self.url + "\(i+1).jpg")!)
+                    .cancelOnDisappear(true) //셀이 화면 밖에 있을 때는 다운로드 취소
+            }
+        }
+        
+ 
     }
 }
 
