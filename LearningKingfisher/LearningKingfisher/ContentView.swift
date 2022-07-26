@@ -10,15 +10,15 @@ import Kingfisher
 
 struct ContentView: View {
     
-    let url:URL = URL(string: "https://randomuser.me/api/portraits/men/50.jpg")!
+    let url:String = "https://randomuser.me/api/portraits/men/"
     
     
-    var  resource: Resource {
-        ImageResource(downloadURL: self.url, cacheKey: "my_cache_key")
-    }
+//    var  resource: Resource {
+//        ImageResource(downloadURL: self.url, cacheKey: "my_cache_key")
+//    }
     
     var body: some View {
-        VStack{
+//        VStack{
 //            KFImage(url)
 //                .placeholder { //플레이스 홀더 설정
 //                    Image(systemName: "list.dash")
@@ -33,11 +33,15 @@ struct ContentView: View {
 //                .frame(width: 128, height: 128) //resize
 //                .cornerRadius(20) //둥근 코너 설정
 //                .shadow(radius: 5) // 그림자 설정
-            
-            
-                
-            
-        }
+//
+//        }
+        
+//        List {
+//            ForEach(0..<20) { i in
+//                KFImage(URL(string: self.url + "\(i+1).jpg")!)
+//                    .cancelOnDisappear(true) //셀이 화면 밖에 있을 때는 다운로드 취소
+//            }
+//        }
     }
 }
 
