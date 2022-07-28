@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftui-webview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/globulus/swiftui-webview",
+      "state" : {
+        "revision" : "f9be55089c020268760d626abbadd643a2b1ca4a",
+        "version" : "1.0.8"
+      }
+    },
+    {
+      "identity" : "swiftui-youtube-player",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/globulus/swiftui-youtube-player",
+      "state" : {
+        "revision" : "73d0d5225f6c1734918fa96ed5d6ecbfd1152e63",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "youtubeplayerkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SvenTiigi/YouTubePlayerKit.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "8c90f96973ef709cda0fbebe3989be49d7fc77bb"
+      }
+    }
+  ],
+  "version" : 2
+}
