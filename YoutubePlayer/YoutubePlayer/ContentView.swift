@@ -7,14 +7,24 @@
 
 import SwiftUI
 import YouTubePlayerKit
-
+import Combine
 class Temp:ObservableObject {
+    
     var now:Int
     var playList:[String] = ["https://youtu.be/fgSXAKsq-Vo","https://youtu.be/DPEtmqvaKqY"]
+    var youTubePlayer = YouTubePlayer(source:.url("https://youtu.be/fgSXAKsq-Vo"),configuration: .init(autoPlay:false,showControls: false))
+    
+    
+    var subscriber = Set<AnyCancellable>()
+    
+    @Published var playTime:Double = 0
+    @Published var endTime:Double = -1
     
     init()
     {
         self.now = 0
+        
+        
     }
     
     func increase()
@@ -31,10 +41,13 @@ struct ContentView: View {
     @State var isPlay:Bool = false
     @StateObject var temp = Temp()
     
+    let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
-    var youTubePlayer = YouTubePlayer(configuration: .init(autoPlay:false))
     
-        
+    
+    
+    
+    
     func next(now:Int) -> Int{
         return now+1
     }
@@ -44,9 +57,9 @@ struct ContentView: View {
     var body: some View {
         
         ZStack{
-           
+            
             VStack{
-                YouTubePlayerView(self.youTubePlayer) { state in
+                YouTubePlayerView(temp.youTubePlayer) { state in
                     // Overlay ViewBuilder closure to place an overlay View
                     // for the current `YouTubePlayer.State`
                     switch state {
@@ -57,10 +70,35 @@ struct ContentView: View {
                     case .error(let error):
                         Text(verbatim: "YouTube player couldn't be loaded")
                     }
-                }.frame(width: 0, height: 0)
+                }
+                
+                
+                Text("Hello").onReceive(timer) { _ in
+                    
+                    temp.youTubePlayer.getDuration { completion in
+                        
+                        switch completion{
+                        case .success(let endTime):
+                            print(endTime)
+                        case.failure(let err):
+                            print("Error")
+                        }
+                    }
+                    
+                    temp.youTubePlayer.getPlaybackState { completion in
+                        
+                        switch completion{
+                        case .success(let state):
+                            print(state)
+                        case .failure(let err):
+                            print("Error2")
+                        }
+                    }
+                }
+                
                 
                 Button {
-                    isPlay == true ? youTubePlayer.pause():youTubePlayer.play()
+                    isPlay == true ? temp.youTubePlayer.pause():temp.youTubePlayer.play()
                     isPlay = !isPlay
                 } label:  {
                     if isPlay == true {
@@ -72,10 +110,10 @@ struct ContentView: View {
                 }
                 
                 Button{
-                    youTubePlayer.load(source: .url(temp.playList[temp.now]))
+                    temp.youTubePlayer.load(source: .url(temp.playList[temp.now]))
                     isPlay = true
                     self.temp.increase()
-                    youTubePlayer.play()
+                    temp.youTubePlayer.play()
                     
                     
                     
