@@ -11,6 +11,7 @@
 		D896DEF8289BF3210020C615 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896DEF7289BF3210020C615 /* ContentView.swift */; };
 		D896DEFA289BF3220020C615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D896DEF9289BF3220020C615 /* Assets.xcassets */; };
 		D896DEFD289BF3220020C615 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D896DEFC289BF3220020C615 /* Preview Assets.xcassets */; };
+		D896DF05289BF6630020C615 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = D896DF04289BF6630020C615 /* PopupView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D896DF05289BF6630020C615 /* PopupView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = ToastMessage;
+			packageProductDependencies = (
+				D896DF04289BF6630020C615 /* PopupView */,
+			);
 			productName = ToastMessage;
 			productReference = D896DEF2289BF3210020C615 /* ToastMessage.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = D896DEE9289BF3210020C615;
+			packageReferences = (
+				D896DF03289BF6620020C615 /* XCRemoteSwiftPackageReference "PopupView" */,
+			);
 			productRefGroup = D896DEF3289BF3210020C615 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,6 +345,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D896DF03289BF6620020C615 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D896DF04289BF6630020C615 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D896DF03289BF6620020C615 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D896DEEA289BF3210020C615 /* Project object */;
 }
