@@ -12,6 +12,7 @@ struct ContentView: View {
     
     @State var shouldShowBottomSolidMessage : Bool = false
     @State var shouldShowBottomToastMessage : Bool = false
+    @State var showAlert:Bool = false
     
     
     func createBottomSolidMessage() -> some View {
@@ -90,6 +91,27 @@ struct ContentView: View {
                         .background(.green)
                         .cornerRadius(10)
                 }
+                
+                Button("얼럿 띄우기") {
+                 
+                    showAlert = true
+
+                }.alert("정말 삭제하시겠습니까?", isPresented: $showAlert) {
+                    Button(role: .destructive) {
+                        print("Delete")
+                    } label: {
+                        Text("삭제")
+                    }
+                    
+                    Button(role: .cancel) {
+                        print("OK")
+                    } label: {
+                        Text("OK")
+                    }
+
+                }
+
+          
                 
                 
                 Spacer()
