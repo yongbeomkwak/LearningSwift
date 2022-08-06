@@ -11,6 +11,8 @@
 		D896DF3A289E5B720020C615 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896DF39289E5B720020C615 /* ContentView.swift */; };
 		D896DF3C289E5B730020C615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D896DF3B289E5B730020C615 /* Assets.xcassets */; };
 		D896DF3F289E5B730020C615 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D896DF3E289E5B730020C615 /* Preview Assets.xcassets */; };
+		D896DF46289E5BA40020C615 /* VolumeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896DF45289E5BA40020C615 /* VolumeObserver.swift */; };
+		D896DF49289E67120020C615 /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = D896DF48289E67120020C615 /* YouTubePlayerKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		D896DF39289E5B720020C615 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D896DF3B289E5B730020C615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D896DF3E289E5B730020C615 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D896DF45289E5BA40020C615 /* VolumeObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D896DF49289E67120020C615 /* YouTubePlayerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +59,7 @@
 				D896DF39289E5B720020C615 /* ContentView.swift */,
 				D896DF3B289E5B730020C615 /* Assets.xcassets */,
 				D896DF3D289E5B730020C615 /* Preview Content */,
+				D896DF45289E5BA40020C615 /* VolumeObserver.swift */,
 			);
 			path = VolumeControl;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = VolumeControl;
+			packageProductDependencies = (
+				D896DF48289E67120020C615 /* YouTubePlayerKit */,
+			);
 			productName = VolumeControl;
 			productReference = D896DF34289E5B720020C615 /* VolumeControl.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = D896DF2B289E5B720020C615;
+			packageReferences = (
+				D896DF47289E67120020C615 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
+			);
 			productRefGroup = D896DF35289E5B720020C615 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			files = (
 				D896DF3A289E5B720020C615 /* ContentView.swift in Sources */,
 				D896DF38289E5B720020C615 /* VolumeControlApp.swift in Sources */,
+				D896DF46289E5BA40020C615 /* VolumeObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D896DF47289E67120020C615 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/YouTubePlayerKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D896DF48289E67120020C615 /* YouTubePlayerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D896DF47289E67120020C615 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */;
+			productName = YouTubePlayerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D896DF2C289E5B720020C615 /* Project object */;
 }
