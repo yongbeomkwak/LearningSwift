@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D896DF1C289D5EFB0020C615 /* VolumeControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896DF1B289D5EFB0020C615 /* VolumeControlApp.swift */; };
-		D896DF1E289D5EFB0020C615 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896DF1D289D5EFB0020C615 /* ContentView.swift */; };
-		D896DF20289D5EFC0020C615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D896DF1F289D5EFC0020C615 /* Assets.xcassets */; };
-		D896DF23289D5EFC0020C615 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D896DF22289D5EFC0020C615 /* Preview Assets.xcassets */; };
+		D896DF38289E5B720020C615 /* VolumeControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896DF37289E5B720020C615 /* VolumeControlApp.swift */; };
+		D896DF3A289E5B720020C615 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896DF39289E5B720020C615 /* ContentView.swift */; };
+		D896DF3C289E5B730020C615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D896DF3B289E5B730020C615 /* Assets.xcassets */; };
+		D896DF3F289E5B730020C615 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D896DF3E289E5B730020C615 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D896DF18289D5EFB0020C615 /* VolumeControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolumeControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D896DF1B289D5EFB0020C615 /* VolumeControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeControlApp.swift; sourceTree = "<group>"; };
-		D896DF1D289D5EFB0020C615 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D896DF1F289D5EFC0020C615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D896DF22289D5EFC0020C615 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D896DF34289E5B720020C615 /* VolumeControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolumeControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D896DF37289E5B720020C615 /* VolumeControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeControlApp.swift; sourceTree = "<group>"; };
+		D896DF39289E5B720020C615 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D896DF3B289E5B730020C615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D896DF3E289E5B730020C615 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D896DF15289D5EFB0020C615 /* Frameworks */ = {
+		D896DF31289E5B720020C615 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D896DF0F289D5EFB0020C615 = {
+		D896DF2B289E5B720020C615 = {
 			isa = PBXGroup;
 			children = (
-				D896DF1A289D5EFB0020C615 /* VolumeControl */,
-				D896DF19289D5EFB0020C615 /* Products */,
+				D896DF36289E5B720020C615 /* VolumeControl */,
+				D896DF35289E5B720020C615 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D896DF19289D5EFB0020C615 /* Products */ = {
+		D896DF35289E5B720020C615 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D896DF18289D5EFB0020C615 /* VolumeControl.app */,
+				D896DF34289E5B720020C615 /* VolumeControl.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D896DF1A289D5EFB0020C615 /* VolumeControl */ = {
+		D896DF36289E5B720020C615 /* VolumeControl */ = {
 			isa = PBXGroup;
 			children = (
-				D896DF1B289D5EFB0020C615 /* VolumeControlApp.swift */,
-				D896DF1D289D5EFB0020C615 /* ContentView.swift */,
-				D896DF1F289D5EFC0020C615 /* Assets.xcassets */,
-				D896DF21289D5EFC0020C615 /* Preview Content */,
+				D896DF37289E5B720020C615 /* VolumeControlApp.swift */,
+				D896DF39289E5B720020C615 /* ContentView.swift */,
+				D896DF3B289E5B730020C615 /* Assets.xcassets */,
+				D896DF3D289E5B730020C615 /* Preview Content */,
 			);
 			path = VolumeControl;
 			sourceTree = "<group>";
 		};
-		D896DF21289D5EFC0020C615 /* Preview Content */ = {
+		D896DF3D289E5B730020C615 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				D896DF22289D5EFC0020C615 /* Preview Assets.xcassets */,
+				D896DF3E289E5B730020C615 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D896DF17289D5EFB0020C615 /* VolumeControl */ = {
+		D896DF33289E5B720020C615 /* VolumeControl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D896DF26289D5EFC0020C615 /* Build configuration list for PBXNativeTarget "VolumeControl" */;
+			buildConfigurationList = D896DF42289E5B730020C615 /* Build configuration list for PBXNativeTarget "VolumeControl" */;
 			buildPhases = (
-				D896DF14289D5EFB0020C615 /* Sources */,
-				D896DF15289D5EFB0020C615 /* Frameworks */,
-				D896DF16289D5EFB0020C615 /* Resources */,
+				D896DF30289E5B720020C615 /* Sources */,
+				D896DF31289E5B720020C615 /* Frameworks */,
+				D896DF32289E5B720020C615 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +84,25 @@
 			);
 			name = VolumeControl;
 			productName = VolumeControl;
-			productReference = D896DF18289D5EFB0020C615 /* VolumeControl.app */;
+			productReference = D896DF34289E5B720020C615 /* VolumeControl.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D896DF10289D5EFB0020C615 /* Project object */ = {
+		D896DF2C289E5B720020C615 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					D896DF17289D5EFB0020C615 = {
+					D896DF33289E5B720020C615 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = D896DF13289D5EFB0020C615 /* Build configuration list for PBXProject "VolumeControl" */;
+			buildConfigurationList = D896DF2F289E5B720020C615 /* Build configuration list for PBXProject "VolumeControl" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = D896DF0F289D5EFB0020C615;
-			productRefGroup = D896DF19289D5EFB0020C615 /* Products */;
+			mainGroup = D896DF2B289E5B720020C615;
+			productRefGroup = D896DF35289E5B720020C615 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D896DF17289D5EFB0020C615 /* VolumeControl */,
+				D896DF33289E5B720020C615 /* VolumeControl */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D896DF16289D5EFB0020C615 /* Resources */ = {
+		D896DF32289E5B720020C615 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D896DF23289D5EFC0020C615 /* Preview Assets.xcassets in Resources */,
-				D896DF20289D5EFC0020C615 /* Assets.xcassets in Resources */,
+				D896DF3F289E5B730020C615 /* Preview Assets.xcassets in Resources */,
+				D896DF3C289E5B730020C615 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D896DF14289D5EFB0020C615 /* Sources */ = {
+		D896DF30289E5B720020C615 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D896DF1E289D5EFB0020C615 /* ContentView.swift in Sources */,
-				D896DF1C289D5EFB0020C615 /* VolumeControlApp.swift in Sources */,
+				D896DF3A289E5B720020C615 /* ContentView.swift in Sources */,
+				D896DF38289E5B720020C615 /* VolumeControlApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D896DF24289D5EFC0020C615 /* Debug */ = {
+		D896DF40289E5B730020C615 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -205,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		D896DF25289D5EFC0020C615 /* Release */ = {
+		D896DF41289E5B730020C615 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,7 +259,7 @@
 			};
 			name = Release;
 		};
-		D896DF27289D5EFC0020C615 /* Debug */ = {
+		D896DF43289E5B730020C615 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -287,7 +287,7 @@
 			};
 			name = Debug;
 		};
-		D896DF28289D5EFC0020C615 /* Release */ = {
+		D896DF44289E5B730020C615 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -318,25 +318,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D896DF13289D5EFB0020C615 /* Build configuration list for PBXProject "VolumeControl" */ = {
+		D896DF2F289E5B720020C615 /* Build configuration list for PBXProject "VolumeControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D896DF24289D5EFC0020C615 /* Debug */,
-				D896DF25289D5EFC0020C615 /* Release */,
+				D896DF40289E5B730020C615 /* Debug */,
+				D896DF41289E5B730020C615 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D896DF26289D5EFC0020C615 /* Build configuration list for PBXNativeTarget "VolumeControl" */ = {
+		D896DF42289E5B730020C615 /* Build configuration list for PBXNativeTarget "VolumeControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D896DF27289D5EFC0020C615 /* Debug */,
-				D896DF28289D5EFC0020C615 /* Release */,
+				D896DF43289E5B730020C615 /* Debug */,
+				D896DF44289E5B730020C615 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D896DF10289D5EFB0020C615 /* Project object */;
+	rootObject = D896DF2C289E5B720020C615 /* Project object */;
 }
